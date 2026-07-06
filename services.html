@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | T.S Welds</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0b0b0b;
+      color:#fff;
+    }
+
+    /* TOP BAR */
+    .top-bar{
+      display:flex;
+      align-items:center;
+      padding:15px;
+      background:#111;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+
+    .back-btn{
+      background:#1e88e5;
+      color:#fff;
+      padding:8px 14px;
+      border:none;
+      border-radius:6px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    .title{
+      margin-left:15px;
+      font-size:18px;
+    }
+
+    /* HERO */
+    .hero{
+      text-align:center;
+      padding:25px 15px;
+    }
+
+    .hero h1{
+      margin:0;
+      color:#1e88e5;
+    }
+
+    .hero p{
+      opacity:0.7;
+      font-size:14px;
+    }
+
+    /* SERVICES GRID */
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:15px;
+      padding:20px;
+    }
+
+    .card{
+      background:#161616;
+      border-radius:10px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.03);
+    }
+
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:12px;
+    }
+
+    .card-content h3{
+      margin:0;
+      color:#1e88e5;
+    }
+
+    .card-content p{
+      font-size:13px;
+      opacity:0.7;
+      margin-top:5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <button class="back-btn" onclick="history.back()">⬅ Back</button>
+    <div class="title">Our Services</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>T.S Welds Services</h1>
+    <p>Quality welding & fabrication solutions</p>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1608303588026-7c4c1f3b4b6c" />
+      <div class="card-content">
+        <h3>Metal Fabrication</h3>
+        <p>Custom steel fabrication for all types of structures.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1613746203812-717e6f5f7c6d" />
+      <div class="card-content">
+        <h3>Arc Welding</h3>
+        <p>Strong and precise welding for industrial work.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" />
+      <div class="card-content">
+        <h3>Gate & Grill Work</h3>
+        <p>Stylish and durable iron gates and window grills.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
+      <div class="card-content">
+        <h3>Repair Work</h3>
+        <p>Fast repair solutions for broken metal structures.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4" />
+      <div class="card-content">
+        <h3>Custom Design Work</h3>
+        <p>Personalized welding designs as per customer needs.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427" />
+      <div class="card-content">
+        <h3>Industrial Projects</h3>
+        <p>Heavy-duty welding for factories & industries.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
